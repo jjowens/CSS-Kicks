@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        div.movie p:first-of-type::before {
+            content: "Movie Title:";
+            background-color: navy;
+            padding: 5px;
+            font-weight: bold;
+            color: #FFF;
+            margin-right: 20px;
+        }
+
+        .movie p a[href$=".pdf"]::after {
+            content: "PDF";
+            background-color: red;
+            color: #FFF;
+            padding: 3px;
+            margin-left: 2px;
+        }
+        .movie p a[href*=".doc"]::after {
+            content: "DOC";
+            background-color: blue;
+            color: #FFF;
+            padding: 3px;
+            margin-left: 2px;
+        }
+        div [data-award="true"] {
+            background-color: yellow;
+        }
+
+        div.movie[data-award="true"] p:first-of-type::after {
+            content: "Award Winning";
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="movie" data-award="true">
+        <p>Back to the Future</p>
+        <p><a href="movie-programme.pdf">Movie Programme</a></p>
+    </div>
+    <div class="movie" data-award="true">
+        <p>The Shawshank Redemption</p>
+        <p><a href="movie-programme.doc">Movie Programme</a></p>
+    </div>
+    <div class="movie">
+        <p>Ghostbusters</p>
+        <p><a href="movie-programme.pdf">Movie Programme</a></p>
+    </div>
+    <div class="movie">
+        <p>Taken</p>
+        <p><a href="movie-programme.doc">Movie Programme</a></p>
+    </div>
+    <div class="movie">
+        <p>Best Year</p>
+        <p><a href="movie-programme.pdf">Movie Programme</a></p>
+    </div>
+    <div class="movie" data-award="true">
+        <p>The Bounty Hunter</p>
+        <p><a href="movie-programme.doc">Movie Programme</a></p>
+        <p><a href="movie-programme.docx">Movie Programme (*.docx)</a></p>
+    </div>
+</body>
+</html>

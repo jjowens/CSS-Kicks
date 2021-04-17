@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            color: red;
+        }
+
+        .movie-gallery {
+            clear: both;
+        }
+
+        .movie-block {
+            float: left;
+            position: absolute;
+            clear: both;
+            animation: myopacity 5s infinite;
+        }
+        .clear-both {
+            clear: both;
+        }
+        .movie-image {
+            float: left;
+        }
+        .movie-description {
+            float: left;
+            position: relative;
+            clear:both;
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 5px;
+            margin: 4px;
+            font-family: Arial, Helvetica, sans-serif;
+            bottom: 100px;
+        }
+        .movie-description h1, h3 {
+            margin: 0px;
+        }
+
+        .movie-block-animate-5 {
+            animation-delay: 0s;
+        }
+
+        .movie-block-animate-4 {
+            animation-delay: 10s;
+        }
+
+        .movie-block-animate-3 {
+            animation-delay: 20s;
+        }
+
+        .movie-block-animate-2 {
+            animation-delay: 30s;
+        }
+
+        .movie-block-animate-1 {
+            animation-delay: 40s;
+        }
+
+        @keyframes myopacity {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+
+</head>
+<body>
+    <div class="movie-gallery">
+        <!-- IMAGE 1 -->
+        <div class="movie-block movie-block-animate-1">
+            <div class="movie-image">
+                <img src="/images/istockphoto-1197490735-1024x1024.jpg" />
+            </div>
+
+            <div class="movie-description">
+                <div>
+                    <h1>Movie Title 1</h1>
+                </div>
+                <div>
+                    <h3>Action | Thriller | Adventure</h3>
+                </div>
+            </div>
+            <div class="clear-both">
+            </div>
+        </div>
+        <!-- IMAGE 2 -->
+        <div class="movie-block movie-block-animate-2">
+            <div class="movie-image">
+                <img src="/images/istockphoto-1198195299-1024x1024.jpg" />
+            </div>
+
+            <div class="movie-description">
+                <div>
+                    <h1>Movie Title 2</h1>
+                </div>
+                <div>
+                    <h3>Crime | Comedy | Thriller</h3>
+                </div>
+            </div>
+            <div class="clear-both">
+            </div>
+        </div>
+        <!-- IMAGE 3 -->
+        <div class="movie-block movie-block-animate-3">
+            <div class="movie-image">
+                <img src="/images/istockphoto-1199015199-1024x1024.jpg" />
+            </div>
+
+            <div class="movie-description">
+                <div>
+                    <h1>Movie Title 3</h1>
+                </div>
+                <div>
+                    <h3>Crime | Comedy | Thriller</h3>
+                </div>
+            </div>
+            <div class="clear-both">
+            </div>
+        </div>
+        <!-- IMAGE 4 -->
+        <div class="movie-block movie-block-animate-4">
+            <div class="movie-image">
+                <img src="/images/istockphoto-1199418087-1024x1024.jpg" />
+            </div>
+
+            <div class="movie-description">
+                <div>
+                    <h1>Movie Title 4</h1>
+                </div>
+                <div>
+                    <h3>Horror | Thriller | Haunted House</h3>
+                </div>
+            </div>
+            <div class="clear-both">
+            </div>
+        </div>
+        <!-- IMAGE 5 -->
+        <div class="movie-block movie-block-animate-5">
+            <div class="movie-image">
+                <img src="/images/istockphoto-1199657592-1024x1024.jpg" />
+            </div>
+            
+            <div class="movie-description">
+                <div>
+                    <h1>Movie Title 5</h1>
+                </div>
+                <div>
+                    <h3>Horror | Thriller | Haunted House</h3>
+                </div>
+            </div>
+            <div class="clear-both">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

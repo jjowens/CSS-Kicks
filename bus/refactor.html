@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Italian Job</title>
+    <style>
+        .content {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 200px;
+            text-align: center;
+        }
+
+        .bus {
+            position: relative;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding: 4px;
+            animation: myimage 6s infinite alternate-reverse;
+        }
+
+        .cliff-edge {
+            position: relative;
+            top: -40px;
+            left: 200px;
+            width: 250px;
+            height: 120px;
+            background: black;
+        }
+
+        .movie-text {
+            font-weight: bold;
+            clear: both;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 70%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0px;
+            clear: both;
+        }
+
+        .movie-quote {
+            font-size: 3em;
+            margin: 0em;
+            padding: 0em;
+        }
+
+        .movie-title {
+            font-size: 1.5em;
+            text-align: right;
+            margin: 0em;
+            padding: 0em;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .content {
+                margin-top: 100px;
+                width: 80%;
+            }
+
+            .cliff-edge {
+                position: relative;
+                top: -20px;
+                left: 0px;
+                width: 200px;
+                height: 60px;
+                background: black;
+            }
+
+            .bus {
+                position: relative;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                padding: 4px;
+            }
+
+            .movie-text {
+                width: 100%;
+            }
+
+            .movie-quote {
+                text-align: left;
+                font-size: 1.5em;
+            }
+
+            .movie-title {
+                font-size: 1em;
+            }
+
+        }
+
+        @media only screen and (max-width: 768px) {
+            .cliff-edge {
+                position: relative;
+                top: -20px;
+                left: 0px;
+                width: 200px;
+                height: 60px;
+                background: black;
+            }
+        }
+
+        @keyframes myimage {
+            from {transform: rotate(12deg);}
+            to {transform: rotate(18deg);}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="bus">
+            <img src="/images/bus-long.png">
+        </div>
+        <div class="cliff-edge">
+            
+        </div>
+        <div class="movie-text">
+            <p class="movie-quote">"Hang on a minute lads, I've got a great idea."</p>
+            <p class="movie-title">The Italian Job (1969)</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 200px;
+            text-align: center;
+        }
+
+        .bus {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 200px;
+            text-align: center;
+        }
+
+        .rotate-image {
+            padding: 4px;
+            animation: myimage 10s infinite alternate-reverse;
+        }
+
+        .cliff-edge {
+            float: left;
+            margin-top: -40px;
+            margin-left: 200px;
+            width: 250px;
+            height: 120px;
+            background: black;
+        }
+
+        @keyframes mymove {
+            from {top: 0px; left: 0px; opacity: 1;}
+            to {top: 100px; left: 0px; opacity: 0;}
+        }
+
+        @keyframes myimage {
+            from { transform: rotate(15deg);}
+            to {transform: rotate(25deg);}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="bus">
+            <img class="rotate-image" src="/images/bus-small.png">
+        </div>
+        <div class="cliff-edge">
+            
+        </div>
+        <div>
+            <p>Hang on lads, I've got a idea!</p>
+        </div>
+    </div>
+</body>
+</html>
