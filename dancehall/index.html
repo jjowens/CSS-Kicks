@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dance Hall</title>
+    <style>
+        .dance-hall {
+            width: 1440px;
+            height: 809px;
+            background: url('imgs/dance-hall-02.jpg') no-repeat center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+
+        .dancing-figure-1 {
+            position: relative;
+            bottom: -300px;
+            animation: dancing-figure-1-routine 10s infinite alternate;
+            left: 0px;
+            z-index: 99;
+        }
+
+        .dancing-figure-2 {
+            position: relative;
+            bottom: -200px;
+            animation: dancing-figure-2-routine 8s infinite alternate;
+            left: 0px;
+            z-index: 98;
+        }
+
+        .dancing-figure-3 {
+            position: relative;
+            bottom: -90px;
+            animation: dancing-figure-3-routine 6s infinite alternate;
+            left: 0px;
+            z-index: 97;
+        }
+
+        .dancing-figure-spin {
+            transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+        }
+
+        @keyframes dancing-figure-1-routine {
+            from {left: 0px;}
+            to {left: 1200px;}
+        }
+
+        @keyframes dancing-figure-2-routine {
+            from {left: 0px;}
+            to {left: 700px;}
+        }
+
+        @keyframes dancing-figure-3-routine {
+            from {left: 0px;}
+            to {left: 350px;}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="dance-hall">
+        <img class="js-dancers dancing-figure-1" src="imgs/dancing-figures-blue.png"/>
+        <img class="js-dancers dancing-figure-2" src="imgs/dancing-figures-pink.png"/>
+        <img class="js-dancers dancing-figure-3" src="imgs/dancing-figures-green.png"/>
+    </div>
+    <script>
+        let dancers = [];
+
+        function spinDancers() {
+            if (dancers !== undefined) {
+                for (let index = 0; index < dancers.length; index++) {
+                    let dancerObj = dancers[index];
+                    
+                    let findClassName = "dancing-figure-spin"
+                    
+                    if (dancerObj.classList.contains(findClassName)) {
+                        dancerObj.classList.remove(findClassName);
+                    } else {
+                        dancerObj.classList.add(findClassName);
+                    }
+                    
+                }
+            }
+        }
+
+        function setupSpinRoutine() {
+            dancers = document.getElementsByClassName("js-dancers");
+
+            setInterval(function(){ spinDancers() }, 3000);
+        }
+
+        setupSpinRoutine();
+
+    </script>
+</body>
+</html>
