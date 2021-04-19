@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinetic Energy</title>
+    <style>
+        .content {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .leftie {
+            position: relative;
+            float: left;
+            top: 260px;
+            border: 2px black solid;
+            text-align: center;
+        }
+
+        .left-ball-swing {
+            position: relative;
+            float: left;
+            top: 0px;
+            height: 430px;
+            vertical-align: bottom;
+            animation: leftKeyframes 2s alternate-reverse infinite;
+            animation-delay: 0s;
+        }
+
+        .right-ball-swing {
+            position: relative;
+            float: left;
+            top: 0px;
+            height: 430px;
+            vertical-align: bottom;
+            animation: rightKeyframes 2s alternate-reverse infinite;
+            animation-delay: 3s;
+        }
+
+        .left-ball {
+            position: relative;
+            bottom: -260px;
+        }
+
+        .right-ball {
+            position: relative;
+            bottom: -260px;
+        }
+
+        .trace-box {
+            border: 2px red solid;
+        }
+
+        @keyframes leftKeyframes {
+            from {transform: rotate(95deg);}
+            to {transform: rotate(0deg);}
+        }
+
+        @keyframes rightKeyframes {
+            from {transform: rotate(-95deg);}
+            to {transform: rotate(0deg);}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="left-ball-swing trace-box">
+            <img class="left-ball" src="images/KineticBall.png" />
+        </div>
+        <div>
+            <div class="leftie">
+                <img class="middle-balls" src="images/KineticBall.png" />
+            </div>
+            <div class="leftie">
+                <img class="middle-balls" src="images/KineticBall.png" />
+            </div>
+            <div class="leftie">
+                <img class="middle-balls" src="images/KineticBall.png" />
+            </div>
+        </div>
+        <div class="leftie right-ball-swing">
+            <img class="right-ball" src="images/KineticBall.png" />
+        </div>
+    </div>
+</body>
+</html>
