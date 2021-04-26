@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom Zone</title>
+    <style>
+        html, body {
+            background-color: black;
+        }
+
+        .content {
+            margin-top: 200px;
+        }
+
+        .prison {
+            transform: skew(0deg,0deg);
+            animation: prison-animation 5s infinite;
+        }
+
+        @keyframes prison-animation {
+            0% {transform: skew(0deg,0deg)}
+            25% {transform: skew(45deg,0deg)}
+            50% {transform: skew(180deg,0deg)}
+            75% {transform: skew(90deg,0deg)}
+            100% {transform: skew(0deg,0deg)}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="prison">
+            <img src="superman.png"/>
+        </div>
+    </div>
+</body>
+</html>
