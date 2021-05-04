@@ -4,9 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind-dev":  "npx tailwindcss-cli@latest build ./assets/tailwind.css -c ./assets/tailwind.toggle.config.js -o ./website/default.css",
-    "tailwind-prod":  "npx tailwindcss-cli@latest build ./assets/tailwind.css -c ./assets/tailwind.toggle.config.js -o ./website/default.css --purge=true"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
