@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         let hardcodedPosition = true;
 
         let width = (hardcodedSized ? "200px" : imgObj.naturalWidth + "px");
-        let height = (hardcodedSized ? "200px" : imgObj.naturalWidth + "px");
+        let height = (hardcodedSized ? "100px" : imgObj.naturalHeight + "px");
         let top =  (hardcodedPosition ? "0px" : imgObj.style.top  + "px");
         let left =  (hardcodedPosition ? "0px" : imgObj.style.left + "px");
 
@@ -38,7 +38,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
         photobombImg.title = "Image " + photoCounter;
         photobombDiv.append(photobombImg);
         
-
         //imgObj.parentElement.appendChild(photobombDiv);
         //photobombDiv.append(photobombImg);
 
