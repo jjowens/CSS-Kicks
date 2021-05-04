@@ -1,6 +1,6 @@
 /*! tailwindcss v2.1.2 | MIT License | https://tailwindcss.com */
 
-/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
 Document
@@ -12,8 +12,8 @@ Use a better box model (opinionated).
 */
 
 *,
-*::before,
-*::after {
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -21,7 +21,7 @@ Use a better box model (opinionated).
 Use a more readable tab size (opinionated).
 */
 
-:root {
+html {
   -moz-tab-size: 4;
   -o-tab-size: 4;
      tab-size: 4;
@@ -585,140 +585,64 @@ video {
   }
 }
 
-body {
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%
-}
-
-.status-greeting {
+.purple-widget {
   --tw-bg-opacity: 1;
-  background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
-  border-radius: 0.25rem;
-  padding: 0.5rem;
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity))
-}
-
-.status-warning {
-  --tw-bg-opacity: 1;
-  background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
-  border-radius: 0.25rem;
-  padding: 0.5rem;
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity))
-}
-
-.banner {
-  --tw-bg-opacity: 1;
-  background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
-  border-radius: 0.25rem;
-  padding: 0.5rem;
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity))
-}
-
-.banner h1 {
-  font-size: 1.5rem;
-  line-height: 2rem
-}
-
-.main-menu {
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem
-}
-
-.main-menu-heading {
-  --tw-bg-opacity: 1;
-  background-color: rgba(30, 64, 175, var(--tw-bg-opacity));
+  background-color: rgba(245, 243, 255, var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(221, 214, 254, var(--tw-border-opacity));
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
-  font-weight: 600;
-  padding: 0.5rem;
-  text-align: center;
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity))
+  border-width: 2px
 }
 
-.main-menu-body {
+.purple-widget div:first-of-type {
   --tw-bg-opacity: 1;
-  background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
-  padding: 0.5rem
+  background-color: rgba(237, 233, 254, var(--tw-bg-opacity));
+  padding: 0.75rem
 }
 
-.main-menu a {
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-  text-decoration: none
+.purple-widget div:last-of-type {
+  padding: 0.75rem
 }
 
-.main-menu a:hover {
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-  text-decoration: underline
-}
-
-.main-menu a:visited {
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-  text-decoration: underline
-}
-
-.main-menu a:active {
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-  text-decoration: underline
-}
-
-.admin-menu {
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem
-}
-
-.admin-menu-heading {
+.red-widget {
   --tw-bg-opacity: 1;
-  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+  background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(254, 202, 202, var(--tw-border-opacity));
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
-  font-weight: 600;
-  padding: 0.5rem;
-  text-align: center;
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity))
+  border-width: 2px
 }
 
-.admin-menu-body {
+.red-widget div:first-of-type {
   --tw-bg-opacity: 1;
-  background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
-  padding: 0.5rem
+  background-color: rgba(254, 226, 226, var(--tw-bg-opacity));
+  padding: 0.75rem
 }
 
-.admin-menu a {
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-  text-decoration: none
+.red-widget div:last-of-type {
+  padding: 0.75rem
 }
 
-.admin-menu a:hover {
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-  text-decoration: underline
+.green-widget {
+  --tw-bg-opacity: 1;
+  background-color: rgba(236, 253, 245, var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(167, 243, 208, var(--tw-border-opacity));
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-width: 2px
 }
 
-.admin-menu a:visited {
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-  text-decoration: underline
+.green-widget div:first-of-type {
+  --tw-bg-opacity: 1;
+  background-color: rgba(209, 250, 229, var(--tw-bg-opacity));
+  padding: 0.75rem
 }
 
-.main-menu a:active {
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-  text-decoration: underline
+.green-widget div:last-of-type {
+  padding: 0.75rem
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
