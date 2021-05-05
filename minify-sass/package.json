@@ -1,0 +1,18 @@
+{
+  "name": "minify-sass",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-default": "sass ./assets/scss/input.scss ./assets/css/tailwind.css",
+    "tailwind-dev":  "npx tailwindcss-cli@latest build ./assets/css/tailwind.css -c ./assets/css/tailwind.toggle.config.js -o ./website/default.css",
+    "tailwind-prod":  "npx tailwindcss-cli@latest build ./assets/css/tailwind.css -c ./assets/css/tailwind.toggle.config.js -o ./website/default.css --purge=true",
+    "css-gen": "npm run sass-default & npm run tailwind-prod"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^2.1.2"
+  }
+}

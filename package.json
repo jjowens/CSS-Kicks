@@ -1,0 +1,19 @@
+{
+  "name": "css-kicks",
+  "version": "1.0.0",
+  "description": "CSS Experiments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjowens/CSS-Kicks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjowens/CSS-Kicks/issues"
+  },
+  "homepage": "https://github.com/jjowens/CSS-Kicks#readme"
+}
