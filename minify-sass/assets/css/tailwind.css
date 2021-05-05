@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 .purple-widget {
-  @apply bg-purple-50 border-purple-200 border-2 rounded-t-lg;
+  @apply bg-purple-50 border-purple-200 border-2 rounded-t-lg mt-4;
 }
 
 .purple-widget div:first-of-type {
@@ -13,7 +14,7 @@
 }
 
 .green-widget {
-  @apply bg-green-50 border-green-200 border-2 rounded-t-lg;
+  @apply bg-green-50 border-green-200 border-2 rounded-t-lg mt-4;
 }
 
 .green-widget div:first-of-type {
@@ -25,7 +26,7 @@
 }
 
 .red-widget {
-  @apply bg-red-50 border-red-200 border-2 rounded-t-lg;
+  @apply bg-red-50 border-red-200 border-2 rounded-t-lg mt-4;
 }
 
 .red-widget div:first-of-type {
@@ -37,7 +38,7 @@
 }
 
 .blue-widget {
-  @apply bg-blue-50 border-blue-200 border-2 rounded-t-lg;
+  @apply bg-blue-50 border-blue-200 border-2 rounded-t-lg mt-4;
 }
 
 .blue-widget div:first-of-type {
@@ -49,7 +50,7 @@
 }
 
 .yellow-widget {
-  @apply bg-yellow-50 border-yellow-200 border-2 rounded-t-lg;
+  @apply bg-yellow-50 border-yellow-200 border-2 rounded-t-lg mt-4;
 }
 
 .yellow-widget div:first-of-type {
@@ -60,6 +61,40 @@
   @apply p-3;
 }
 
-@tailwind utilities;
+.indigo-widget {
+  @apply bg-indigo-50 border-indigo-200 border-2 rounded-t-lg mt-4;
+}
+
+.indigo-widget div:first-of-type {
+  @apply bg-indigo-100 p-3;
+}
+
+.indigo-widget div:last-of-type {
+  @apply p-3;
+}
+
+.gray-widget {
+  @apply bg-gray-50 border-gray-200 border-2 rounded-t-lg mt-4;
+}
+
+.gray-widget div:first-of-type {
+  @apply bg-gray-100 p-3;
+}
+
+.gray-widget div:last-of-type {
+  @apply p-3;
+}
+
+.pink-widget {
+  @apply bg-pink-50 border-pink-200 border-2 rounded-t-lg mt-4;
+}
+
+.pink-widget div:first-of-type {
+  @apply bg-pink-100 p-3;
+}
+
+.pink-widget div:last-of-type {
+  @apply p-3;
+}
 
 /*# sourceMappingURL=tailwind.css.map */

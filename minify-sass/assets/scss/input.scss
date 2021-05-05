@@ -1,20 +1,25 @@
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 
-$colours: purple, green, red, blue, yellow, indigio;
+$colours: purple, green, red, blue, yellow, indigo, gray, pink;
 
-@each $colour in $colours {
-    .#{$colour}-widget {
-        @apply bg-#{$colour}-50 border-#{$colour}-200 border-2 rounded-t-lg
-     }
-     
-      .#{$colour}-widget div:first-of-type {
-         @apply bg-#{$colour}-100 p-3
-      }
-     
-      .#{$colour}-widget div:last-of-type {
-         @apply p-3
-      }
+@mixin createColourWidget($colour) {
+   // ---- {$colour} Widget -----
+   .#{$colour}-widget {
+      @apply bg-#{$colour}-50 border-#{$colour}-200 border-2 rounded-t-lg mt-4
+   }
+   
+    .#{$colour}-widget div:first-of-type {
+       @apply bg-#{$colour}-100 p-3
+    }
+   
+    .#{$colour}-widget div:last-of-type {
+       @apply p-3
+    }
+
 }
 
-@tailwind utilities;
+@each $colourVal in $colours {
+    @include createColourWidget($colourVal)
+}
